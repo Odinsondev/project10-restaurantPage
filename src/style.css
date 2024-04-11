@@ -7,45 +7,115 @@ body {
   background-color: var(--background1, white);
 }
 
+@font-face {
+  font-family: 'Babylonica';
+  src: url('./fonts/babylonica-regular-webfont.woff2') format('woff2'),
+    url('./fonts/babylonica-regular-webfont.woff') format('woff');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Allura';
+  src: url('./fonts/allura-regular-webfont.woff2') format('woff2'),
+    url('./fonts/allura-regular-webfont.woff') format('woff');
+  font-style: normal;
+}
+
 :root {
   --background1: rgb(163, 189, 209);
   --background2: rgb(255, 255, 255);
   --text1: rgb(0, 0, 0);
   --text2: rgb(0, 0, 0);
-  --text-footer: rgb(0, 0, 0);
+  --text-footer: rgb(228, 209, 183);
   /* font-size: 16px; */   /* Disables browser font size setting */
 }
 
-:root.light {
-  --background1: rgb(255, 255, 255);
-  --background2: rgb(255, 255, 255);
-  --text1: rgb(0, 0, 0);
-  --text2: rgb(0, 0, 0);
-  --text-footer: rgb(0, 0, 0);
-  /* font-size: 16px; */
+
+body {
+  display: grid;
+  grid-template: 1fr 5fr 40px / 1fr;
+
+  background-image: url(./images/shashlik.jpg);
+  background-size: cover;
 }
 
-:root.dark {
-  --background1: rgb(0, 0, 0);
-  --background2: rgb(0, 0, 0);
-  --text1: rgb(255, 255, 255);
-  --text2: rgb(255, 255, 255);
-  --text-footer: rgb(255, 255, 255);
-  /* font-size: 16px; */
-}
+header {
+  grid-row: 1 / 2;
 
-
-
-
-/* footer {
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.500);
+}
+
+button {
+  margin: 0 20px 0 20px;
+  color: var(--text-footer);
+  background-color: rgba(0, 0, 0, 0.250);
+  border-style: none;
+  font-size: 1.2rem;
+  height: clamp(4vh, 6vh, 10vh);
+  /* fix size when small screen */
+  width: 6vw;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.350);
+}
+
+button:active {
+  background-color: rgba(0, 0, 0, 0.450);
+}
+
+#content {
+  grid-row: 2 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 25vh;
+  margin: 0;
+  color: var(--text1);
+  font-family: 'Babylonica';
+}
+
+.slogan-container {
+  display: flex;
+  justify-content: center;
+}
+
+.slogan {
+  font-size: 8vh;
+  margin: 0;
+  color: var(--text1);
+  font-family: 'Allura';
+}
+
+.container2 {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+}
+
+.container2>p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgb(170, 152, 127);
+}
+
+footer {
+  grid-row: 3 / 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.501);
+  height: 40px;
   font-size: 1rem;
   color: var(--text-footer);
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-} */
+}
