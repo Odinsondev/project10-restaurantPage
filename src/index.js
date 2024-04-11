@@ -1,4 +1,8 @@
 import './normalize.css';
 import './style.css';
 
-console.log("test");
+import renderHome from './home';
+
+console.log("index test");
+
+renderHome();

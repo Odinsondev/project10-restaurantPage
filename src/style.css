@@ -76,32 +76,32 @@ button:active {
   align-items: center;
 }
 
-.name {
+#restaurantName {
   font-size: 25vh;
   margin: 0;
   color: var(--text1);
   font-family: 'Babylonica';
 }
 
-.slogan-container {
+#slogan-container {
   display: flex;
   justify-content: center;
 }
 
-.slogan {
+#slogan {
   font-size: 8vh;
   margin: 0;
   color: var(--text1);
   font-family: 'Allura';
 }
 
-.container2 {
+#container2 {
   position: fixed;
   bottom: 50px;
   right: 30px;
 }
 
-.container2>p {
+#container2>p {
   margin: 0;
   font-size: 0.8rem;
   color: rgb(170, 152, 127);
