@@ -55,9 +55,8 @@ button {
   background-color: rgba(0, 0, 0, 0.250);
   border-style: none;
   font-size: 1.2rem;
-  height: clamp(4vh, 6vh, 10vh);
-  /* fix size when small screen */
-  width: 6vw;
+  height: clamp(30px, 6vh, 60px);
+  width: clamp(65px, 6vw, 110px);
 }
 
 button:hover {
