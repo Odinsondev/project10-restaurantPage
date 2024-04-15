@@ -1,4 +1,4 @@
-//Home tab
+//Home tab JS
 
 export default renderHome;
 
@@ -14,9 +14,14 @@ const content = document.getElementById('content');
 
 //functions
 function addContainers() {
+  const container1Wrapper = document.createElement('div');
+  container1Wrapper.id = 'home-container1-wrapper';
+  content.appendChild(container1Wrapper);
+
   const container1 = document.createElement('div');
-  container1.id = 'container1';
-  content.appendChild(container1);
+  container1.id = 'home-container1';
+  container1Wrapper.appendChild(container1);
+
 
   const container2 = document.createElement('div');
   container2.id = 'container2';
@@ -24,10 +29,10 @@ function addContainers() {
 }
 
 function addCointainer1Content() {
-  const container1 = document.getElementById('container1');
+  const container1 = document.getElementById('home-container1');
 
   const restaurantName = document.createElement('p');
-  restaurantName.id = 'restaurantName';
+  restaurantName.id = 'home-restaurant-name';
   restaurantName.textContent = "Shashlik"
   container1.appendChild(restaurantName);
 
