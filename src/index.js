@@ -2,14 +2,16 @@ import './normalize.css';
 import './style.css';
 import './home.css';
 import './menu.css';
+import './contact.css'
 
 import renderHome from './home';
 import renderMenu from './menu';
+import renderContact from './contact';
 
 
 //initialize
 function init() {
-  renderHome();
+  renderContact();
 }
 init();
 

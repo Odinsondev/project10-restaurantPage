@@ -1,0 +1,50 @@
+/* contact tab CSS */
+
+#contact-container1-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-container1 {
+  width: 25vw;
+}
+
+#wrapper1,
+#wrapper2,
+#wrapper3,
+#wrapper5,
+#wrapper6,
+#wrapper7,
+#wrapper8,
+#wrapper9 {
+  display: flex;
+  justify-content: center;
+}
+
+#wrapper41,
+#wrapper42,
+#wrapper43,
+#wrapper44,
+#wrapper45,
+#wrapper46,
+#wrapper47 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrapper41>p,
+#wrapper42>p,
+#wrapper43>p,
+#wrapper44>p,
+#wrapper45>p,
+#wrapper46>p,
+#wrapper47>p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
