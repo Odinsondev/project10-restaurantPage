@@ -54,6 +54,7 @@ function addCointainer1Content() {
   wrapper2.appendChild(p1);
 
   const hr1 = document.createElement('hr');
+  hr1.classList.add('contact-hr');
   container1.appendChild(hr1);
 
 
@@ -62,6 +63,7 @@ function addCointainer1Content() {
   container1.appendChild(wrapper3);
 
   const img2 = document.createElement('img');
+  img2.id = 'hours';
   img2.src = '../src/icons/hours.svg';
   img2.alt = "hours icon";
   wrapper3.appendChild(img2);
@@ -162,6 +164,7 @@ function addCointainer1Content() {
   wrapper47.appendChild(p15);
 
   const hr2 = document.createElement('hr');
+  hr2.classList.add('contact-hr');
   container1.appendChild(hr2);
 
 
@@ -170,18 +173,19 @@ function addCointainer1Content() {
   container1.appendChild(wrapper5);
 
   const img3 = document.createElement('img');
+  img3.id = 'phone';
   img3.src = '../src/icons/phone.svg';
   img3.alt = "phone icon";
   wrapper5.appendChild(img3);
 
 
-  const wrapper6 = document.createElement('div');
+  /* const wrapper6 = document.createElement('div');
   wrapper6.id = 'wrapper6';
-  container1.appendChild(wrapper6);
+  container1.appendChild(wrapper6); */
 
   const p16 = document.createElement('p');
   p16.textContent = '+1 800 8135';
-  wrapper6.appendChild(p16);
+  wrapper5.appendChild(p16);
 
 
   const wrapper7 = document.createElement('div');
@@ -189,20 +193,22 @@ function addCointainer1Content() {
   container1.appendChild(wrapper7);
 
   const img4 = document.createElement('img');
+  img4.id = 'email';
   img4.src = '../src/icons/email.svg';
   img4.alt = "email icon";
   wrapper7.appendChild(img4);
 
 
-  const wrapper8 = document.createElement('div');
+  /* const wrapper8 = document.createElement('div');
   wrapper8.id = 'wrapper8';
-  container1.appendChild(wrapper8);
+  container1.appendChild(wrapper8); */
 
   const p17 = document.createElement('p');
   p17.textContent = 'shashlik@shashlik.com';
-  wrapper8.appendChild(p17);
+  wrapper7.appendChild(p17);
 
   const hr3 = document.createElement('hr');
+  hr3.classList.add('contact-hr');
   container1.appendChild(hr3);
 
 
@@ -220,11 +226,6 @@ function addCointainer1Content() {
   img6.alt = "bird icon";
   wrapper9.appendChild(img6);
 }
-
-
-
-
-
 
 function addCointainer2Content() {
   const container2 = document.getElementById('container2');
