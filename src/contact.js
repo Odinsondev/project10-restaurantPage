@@ -1,5 +1,7 @@
 //Contact tab JS
 
+import Address from './icons/address.svg';
+
 export default renderContact;
 
 
@@ -42,7 +44,7 @@ function addCointainer1Content() {
   container1.appendChild(wrapper1);
 
   const img1 = document.createElement('img');
-  img1.src = '../src/icons/address.svg'
+  img1.src = Address;
   img1.alt = "address icon";
   wrapper1.appendChild(img1);
 
