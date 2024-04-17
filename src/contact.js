@@ -1,6 +1,12 @@
 //Contact tab JS
 
 import Address from './icons/address.svg';
+import Hours from './icons/hours.svg';
+import Phone from './icons/phone.svg';
+import Email from './icons/email.svg';
+import Instagram from './icons/instagram.svg';
+import Bird from './icons/bird.svg';
+
 
 export default renderContact;
 
@@ -67,7 +73,7 @@ function addCointainer1Content() {
 
   const img2 = document.createElement('img');
   img2.id = 'hours';
-  img2.src = '../src/icons/hours.svg';
+  img2.src = Hours;
   img2.alt = "hours icon";
   wrapper3.appendChild(img2);
 
@@ -177,14 +183,9 @@ function addCointainer1Content() {
 
   const img3 = document.createElement('img');
   img3.id = 'phone';
-  img3.src = '../src/icons/phone.svg';
+  img3.src = Phone;
   img3.alt = "phone icon";
   wrapper5.appendChild(img3);
-
-
-  /* const wrapper6 = document.createElement('div');
-  wrapper6.id = 'wrapper6';
-  container1.appendChild(wrapper6); */
 
   const p16 = document.createElement('p');
   p16.textContent = '+1 800 8135';
@@ -197,14 +198,9 @@ function addCointainer1Content() {
 
   const img4 = document.createElement('img');
   img4.id = 'email';
-  img4.src = '../src/icons/email.svg';
+  img4.src = Email;
   img4.alt = "email icon";
   wrapper7.appendChild(img4);
-
-
-  /* const wrapper8 = document.createElement('div');
-  wrapper8.id = 'wrapper8';
-  container1.appendChild(wrapper8); */
 
   const p17 = document.createElement('p');
   p17.textContent = 'shashlik@shashlik.com';
@@ -220,12 +216,12 @@ function addCointainer1Content() {
   container1.appendChild(wrapper9);
 
   const img5 = document.createElement('img');
-  img5.src = '../src/icons/instagram.svg';
+  img5.src = Instagram;
   img5.alt = "instagram icon";
   wrapper9.appendChild(img5);
 
   const img6 = document.createElement('img');
-  img6.src = '../src/icons/bird.svg';
+  img6.src = Bird;
   img6.alt = "bird icon";
   wrapper9.appendChild(img6);
 }
