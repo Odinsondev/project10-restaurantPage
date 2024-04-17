@@ -66,6 +66,10 @@ button {
   width: clamp(65px, 6vw, 110px);
 }
 
+#contact-button {
+  width: clamp(80px, 6vw, 110px);
+}
+
 button:hover {
   background-color: rgba(0, 0, 0, 0.350);
 }

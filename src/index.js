@@ -11,7 +11,7 @@ import renderContact from './contact';
 
 //initialize
 function init() {
-  renderContact();
+  renderHome();
 }
 init();
 
@@ -19,6 +19,7 @@ init();
 const content = document.getElementById('content');
 const homeButton = document.getElementById('home-button');
 const menuButton = document.getElementById('menu-button');
+const contactButton = document.getElementById('contact-button');
 
 //bind events
 homeButton.addEventListener('click', deleteContent);
@@ -27,6 +28,9 @@ homeButton.addEventListener('click', renderHome);
 
 menuButton.addEventListener('click', deleteContent);
 menuButton.addEventListener('click', renderMenu);
+
+contactButton.addEventListener('click', deleteContent);
+contactButton.addEventListener('click', renderContact);
 
 //functions
 function deleteContent() {

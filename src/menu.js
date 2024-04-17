@@ -33,6 +33,7 @@ function addContainers() {
   content.appendChild(container2);
 }
 
+
 function addCointainer1Content() {
   const container1 = document.getElementById('menu-container1');
 
@@ -94,6 +95,7 @@ function addCointainer1Content() {
   container1.appendChild(chickenPrice);
 }
 
+
 function addCointainer2Content() {
   const container2 = document.getElementById('container2');
 
@@ -101,6 +103,7 @@ function addCointainer2Content() {
   unsplashReference.textContent = "Image by Unsplash";
   container2.appendChild(unsplashReference);
 }
+
 
 function renderMenu() {
   addContentStyle();
